@@ -1,0 +1,14 @@
+/* pages/zc.wxss */
+input{float:left;border:1px solid #ebebeb;height:80rpx;width:512rpx}
+.logo{width:500rpx;margin:50rpx auto}
+.logo image{width:100%}
+.input{clear:both;width:600rpx;height:100rpx;margin:30rpx auto}
+.cion{width:80rpx;height:80rpx;float:left;border:1px solid #ebebeb;border-right:none;}
+button{background:#d43d28;color:#FFF;margin:30rpx 0;padding:0;}
+.dan{color:#5a5a5a;font-size:26rpx;margin:50rpx 0;text-align:center}
+.code{float:right;width:230rpx;background:#d43d28;text-align:center;height:80rpx;line-height:80rpx;color:#FFF}
+.codeleft{width:230rpx;}
+.kuang{width:18rpx;height:18rpx;border:1px solid #7a7a7a;float:left;margin-top:6rpx;margin-right:14rpx}
+.chkuang{position:absolute;width:26rpx;height:26rpx;left:-6rpx;top:0}
+.chkuang image{z-index:2;width:100%}
+.check{clear:both;position:relative;width:600rpx;height:50rpx;margin:30rpx auto;color:#5a5a5a;font-size:26rpx}

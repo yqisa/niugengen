@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/seek",
+    "pages/login",
+    "pages/zc",
+     "pages/qihuo",
+    "pages/gupiao",
+    "pages/jiangxiang",
+     "pages/note",
+  "pages/us",
+    "pages/detail",
+    "pages/my",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00aeff",
+    "navigationBarTitleText": "牛跟跟比赛",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+      "color": "#666566",
+      "selectedColor": "#000000",
+      "borderStyle": "black",
+      "list": [
+        {
+          "selectedIconPath": "images/index1.png",
+          "iconPath": "images/index.png",
+          "pagePath": "pages/index",
+          "text": "首页"
+        },
+        {
+          "selectedIconPath": "images/gupiao1.png",
+          "iconPath": "images/gupiao.png",
+          "pagePath": "pages/gupiao",
+          "text": "STC排名"
+        },
+        {
+          "selectedIconPath": "images/qihuo1.png",
+          "iconPath": "images/qihuo.png",
+          "pagePath": "pages/qihuo",
+          "text": "CTA排名"
+        },
+        {
+          "selectedIconPath": "images/my1.png",
+          "iconPath": "images/my.png",
+          "pagePath": "pages/my",
+          "text": "我的"
+        }
+      ]
+  },
+  "subPackages": [
+      {
+        "root": "ec-canvas/",
+        "pages": [
+          "detail/index"
+        ]
+      }
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

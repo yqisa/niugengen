@@ -1,0 +1,15 @@
+/* pages/seek.wxss */
+.head{display:flex;}
+.head .head-left image{width:350rpx;}
+.head .head-left{width:70%}
+.head .head-right{text-align:right;width:30%;line-height:100rpx;padding-right:30rpx}
+.head .head-right image{width:30rpx;height:30rpx}
+.seek_main{display:flex;padding:30rpx;margin:30rpx;color:#2196f3;font-size:30rpx;border:1px solid #ebebeb;border-right:2px solid #ccc;border-bottom:2px solid #ccc;border-left:8rpx solid #2196f3;border-radius:10rpx;position:relative}
+.active{color:#d43d27;border-left:8rpx solid #d43d27;}
+.seek_main .p{color:#333;font-size:26rpx;}
+.seek_main .p1{padding-top:30rpx}
+.active .seekbtn{background: #d43d27}
+  .seekbtn{color:#FFF;font-size:28rpx;padding:10rpx 14rpx;background: #2196f3;}
+  .kongge{height: 30rpx;}
+  .codeimg{width:190rpx;}
+  .code{position:absolute;right:20rpx;top:35rpx}

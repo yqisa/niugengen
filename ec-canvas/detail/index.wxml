@@ -1,0 +1,113 @@
+<!--pages/detail.wxml-->
+<view>
+<view class="head">
+  <view class="head-left">
+      <image mode="widthFix" src="/images/logo.png"></image>
+  </view>
+  <view class="head-right">
+    <navigator url="/pages/seek">
+        <image mode="widthFix" src="/images/jia.png"></image>我要咨询
+    </navigator>
+  </view>
+</view>
+
+<view class="qwe">
+    <view class="asd">
+     
+      <view class="qwerrr">
+          <view style="width:50%">
+            <text>{{name}}\n<text style="font-size:24rpx">总排名：第 </text><text style="font-size:#FE0107;font-size:46rpx;color:#FE0107">{{id}}</text><text style="font-size:24rpx"> 名</text></text>
+          </view>
+      <view class="line"></view>
+          <view style="width:50%"> 
+            <text>积分\n<text style="color:#FE0107">{{benjin}}</text></text>
+          </view>
+           
+         
+      </view>
+
+      <view class="line2"></view>
+      <view class="adsdd">
+          <view style="width:33%">
+              <text>总积分\n<text style="color:#FE0107">{{zichan}}</text></text>
+          </view>
+          <view style="width:33%">
+              <text>总收益率\n<text style="color:#FE0107">{{shouyi}}</text></text>
+          </view>
+          <view style="width:33%">
+              <text>积分比\n<text>{{cangwei}}</text></text>
+          </view>
+      </view>
+
+  </view>
+</view>
+<view class="e3br"></view>
+<view class="brtap">
+  <view class="brtapleft">
+  </view>
+   收益走势图<span> (近5日)</span>
+</view>
+<view>
+  <view class="container">
+    <ec-canvas id="mychart1" canvas-id="mychart-line" ec="{{ ec1 }}"></ec-canvas>
+  </view>
+</view>
+
+<view class="e3br"></view>
+<view class="brtap" style="border-bottom:none">
+  <view class="brtapleft">
+  </view>
+   积分详情
+</view>
+<view class="redbr"></view>
+
+<view class="tapapimain_m">
+<view class="tapapimain">
+    <view class="tapapi">
+        单价
+    </view>
+    <view class="tapapi">
+        数量
+    </view>
+    <view class="tapapi">
+        市价
+    </view>
+    <view class="tapapi">
+        盈亏比例
+    </view>
+    <view class="tapapi" style="border-right:1px solid #ebebeb;">
+        参考积分
+    </view>
+</view>
+</view>
+<view class="ebbr"></view>
+<view class="apimain" wx:for='{{data}}'>
+        <!-- <view class="top">
+        {{item[1]}}  {{item[0]}}
+        </view> -->
+        <view class="top">
+        {{item[0]}}
+        </view>       
+        <view class="apimainfive">
+    <view class="api">      
+       {{item[2]}}
+    </view>
+    <view class="api">
+        {{item[3]}}
+    </view>
+    <view class="api">
+        {{item[4]}}
+    </view>
+    <view class="api">
+        {{item[5]}}
+    </view>
+    <view class="api">
+        {{item[6]}}
+    </view>
+    </view>
+</view>
+<view wx:if='{{!data}}' style="text-align:center;padding:30rpx 0;width:100%;color:#5a5a5a">
+   暂无数据
+</view>
+<view class="e3br"></view>
+</view>

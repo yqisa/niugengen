@@ -1,0 +1,5 @@
+.head{display:flex;}
+.head .head-left image{width:350rpx;}
+.head .head-left{width:70%}
+.head .head-right{text-align:right;width:30%;line-height:100rpx;padding-right:30rpx}
+.head .head-right image{width:30rpx;height:30rpx}

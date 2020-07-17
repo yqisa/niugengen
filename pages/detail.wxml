@@ -1,0 +1,45 @@
+<!--pages/detail.wxml-->
+<view class="head">
+  <view class="head-left">
+      <image mode="widthFix" src="/images/logo.png"></image>
+  </view>
+  <view class="head-right">
+      <image mode="widthFix" src="/images/jia.png"></image>我要咨询
+  </view>
+</view>
+
+<view class="qwe">
+    <view class="asd">
+     
+      <view class="qwerrr">
+          <view>
+            <text>牛更更\n总排名：<text>1</text></text>
+          </view>
+      <view class="line"></view>
+          <view> 
+            <text>本金\n<text>10000</text></text>
+          </view>
+           
+         
+      </view>
+
+      <view class="line2"></view>
+      <view class="adsdd">
+          <view>
+              <text>总资产：\n<text>10000</text></text>
+          </view>
+          <view>
+              <text>总收益率：\n<text>10%</text></text>
+          </view>
+          <view>
+              <text>仓位比：\n<text>10%</text></text>
+          </view>
+      </view>
+
+  </view>
+</view>
+<view>
+  <view class="container">
+    <ec-canvas id="mychart1" canvas-id="mychart-line" ec="{{ ec1 }}"></ec-canvas>
+  </view>
+</view>

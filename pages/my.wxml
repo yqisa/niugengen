@@ -1,0 +1,178 @@
+<!--pages/my.wxml-->
+<view wx:if='{{gpif==1}}'>
+<view class="head">
+   为了提供更优质的服务，推荐您使用<span><navigator url="login" style="display:inline">手机号登录</navigator></span>
+</view>
+<view class="header">
+   <view class="attr" wx:if='{{attr}}'>
+        <image mode="widthFix" src="{{attr}}"></image>
+   </view>
+   <view class="attr" wx:if='{{!attr}}'>
+        <image mode="widthFix" src="/images/login.png"></image>
+   </view>
+   <view class="name" wx:if='{{name}}'>
+        {{name}}
+   </view>
+   <view class="name" wx:if='{{!name}}'>
+        牛跟跟
+   </view>
+   <view class="phone" wx:if='{{phone}}'>
+        {{phone}}
+   </view>
+   <view class="phone" wx:if='{{!phone}}' bindtap="login">
+        点击登录获取你的昵称头像
+   </view>
+</view>
+<view class="tab">
+   <view class="tab_text">排名页面</view>
+   <view class="right">
+      <image mode="widthFix" src="/images/right.png"></image>
+   </view>
+</view>
+<view class='cion' style="padding-bottom:20rpx">
+
+   <view>
+    <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/my-1.png"></image>
+      <br/>
+      <text>STC初级赛</text>
+      
+    </navigator>
+   </view>
+
+   <view bindtap="stctype" data-A="2">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/my2.png"></image>
+      <br/>
+      <text>STC中级赛</text>
+      </navigator>
+   </view>
+   <view bindtap="stctype" data-A="3">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/my3.png"></image>
+      <br/>
+      <text>STC高级赛</text>
+      </navigator>
+   </view>
+   <view bindtap="stctype" data-A="4">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/my4.png"></image>
+      <br/>
+      <text>FDM赛排名</text>
+      </navigator>
+   </view>
+</view>
+<image mode="widthFix" src="/images/mylong.png"></image>
+<view class="tab">
+  <navigator url="us">
+   <view class="tab_text">关于我们</view>
+   <view class="right">
+      <image mode="widthFix" src="/images/right.png"></image>
+   </view>
+   </navigator>
+</view>
+<view class="tab">
+    <navigator url="seek">
+   <view class="tab_text">咨询报名</view>
+   <view class="right">
+      <image mode="widthFix" src="/images/right.png"></image>
+   </view>
+       </navigator>
+</view>
+<view class="tab">
+  <navigator url="note">
+   <view class="tab_text">赛事说明</view>
+   <view class="right">
+      <image mode="widthFix" src="/images/right.png"></image>
+   </view>
+   </navigator>
+</view>
+</view>
+<!--pages/my.wxml-->
+<view wx:if='{{gpif!=1}}'>
+<view class="head">
+   为了提供更优质的服务，推荐您使用<span>手机号登录</span>
+</view>
+<view class="header">
+   <view class="attr" wx:if='{{attr}}'>
+        <image mode="widthFix" src="{{attr}}"></image>
+   </view>
+   <view class="attr" wx:if='{{!attr}}'>
+        <image mode="widthFix" src="/images/logo.png"></image>
+   </view>
+   <view class="name" wx:if='{{name}}'>
+        {{name}}
+   </view>
+   <view class="name" wx:if='{{!name}}'>
+        牛跟跟
+   </view>
+   <view class="phone" wx:if='{{phone}}'>
+        {{phone}}
+   </view>
+   <view class="phone" wx:if='{{!phone}}' bindtap="login">
+        点击登录获取你的昵称头像
+   </view>
+</view>
+<view class="tab">
+   <view class="tab_text">排名页面</view>
+   <!-- <view class="right">
+      <image mode="widthFix" src="/images/right.png"></image>
+   </view> -->
+</view>
+<view class='cion' style="padding-bottom:20rpx">
+
+   <view>
+    <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/my-1.png"></image>
+      <br/>
+      泳池好手
+    </navigator>
+   </view>
+
+   <view>
+   <navigator url="gupiao?type=2" open-type="switchTab">
+      <image mode="widthFix" src="/images/my2.png"></image>
+      <br/>
+      健身好手
+      </navigator>
+   </view>
+   <view>
+   <navigator url="qihuo" open-type="switchTab">
+      <image mode="widthFix" src="/images/my3.png"></image>
+      <br/>
+      赛事月排
+      </navigator>
+   </view>
+   <view>
+   <navigator url="qihuo?type=2" open-type="switchTab">
+      <image mode="widthFix" src="/images/my4.png"></image>
+      <br/>
+      赛事总排
+      </navigator>
+   </view>
+</view>
+<view class="tab">
+  <navigator url="seek">
+   <view class="tab_text">关于我们</view>
+   <view class="right">
+      <image mode="widthFix" src="/images/right.png"></image>
+   </view>
+   </navigator>
+</view>
+<view class="tab">
+    <navigator url="seek">
+   <view class="tab_text">咨询报名</view>
+   <view class="right">
+      <image mode="widthFix" src="/images/right.png"></image>
+   </view>
+       </navigator>
+</view>
+<view class="tab">
+  <navigator url="seek">
+   <view class="tab_text">赛事说明</view>
+   <view class="right">
+      <image mode="widthFix" src="/images/right.png"></image>
+   </view>
+   </navigator>
+</view>
+</view>

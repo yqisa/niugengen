@@ -1,0 +1,46 @@
+/* pages/detail.wxss */
+ec-canvas {
+    width: 800rpx;
+    height: 500rpx;
+  }
+  .head{display:flex;}
+.head .head-left image{width:350rpx;}
+.head .head-left{width:70%}
+.head .head-right{text-align:right;width:30%;line-height:100rpx;padding-right:30rpx}
+.head .head-right image{width:30rpx;height:30rpx}
+
+.qwe{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    width: 100%;
+    height: 400rpx;
+    background-color: brown;
+    
+}
+.asd{
+    width: 95%;
+    height: 90%;
+    background-color:beige;
+    border-radius :20rpx
+}
+.qwerrr{
+    padding: 20rpx;
+    display: flex;
+    justify-content: center;
+}
+.line{
+    width: 5rpx;
+    height: 150rpx;
+    background-color: brown;
+}
+.line2{
+
+    height: 5rpx;
+    background-color: brown;
+    margin: 20rpx;
+}
+.adsdd{
+    display: flex;
+    justify-content: center;
+}

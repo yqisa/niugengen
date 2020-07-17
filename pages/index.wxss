@@ -1,0 +1,6 @@
+/* pages/index.wxss */
+.cion{display:flex;text-align:center;color:#333333;font-size:26rpx;margin:30rpx 0;}
+.cion view{width:25%;text-align:center;}
+.cion image{width:100rpx;height:100rpx;display:block;margin:10rpx auto}
+/* .list{padding-top:5rpx} */
+page{background:#FFF}

@@ -1,0 +1,194 @@
+<!--pages/gupiao.wxml-->
+<view wx:if='{{gpif==1}}'>
+<view class="head">
+    <view class="head-left">
+        <image mode="widthFix" src="/images/logo.png"></image>
+    </view>
+    <view class="head-right">
+    <!-- <navigator url="seek">
+        <image mode="widthFix" src="/images/jia.png"></image>我要咨询
+    </navigator> -->
+    </view>
+</view>
+<!-- <view>
+      <swiper style="width:100%;height:{{imgheights}}px" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+               <image bindload="imageLoad" mode="widthFix" src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+</view> -->
+<view class='cion' style="padding-top:20rpx">
+   <view>
+    <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/c1.png"></image>
+      <br/>
+      STC初级赛
+    </navigator>
+   </view>
+
+   <view bindtap="stctype" data-A="2">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/c2.png"></image>
+      <br/>
+      STC中级赛
+      </navigator>
+   </view>
+   <view bindtap="stctype" data-A="3">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/c3.png"></image>
+      <br/>
+      STC高级赛
+      </navigator>
+   </view>
+   <view bindtap="stctype" data-A="4">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/c4.png"></image>
+      <br/>
+      FDM赛排
+      </navigator>
+   </view>
+</view>
+<view class="tap">
+    <view class="tap-t active" bindtap="caopanshoubtn">
+        CTA赛排名
+    </view>
+</view>
+<view class="tapapimain">
+    <view class="tapapi">
+        排名
+    </view>
+    <view class="tapapi">
+        选手
+    </view>
+    <view class="tapapi">
+        总收益率
+    </view>
+    <view class="tapapi">
+        积分比
+    </view>
+    <view class="tapapi" style="border-right:none">
+        详情
+    </view>
+</view>
+<view class="apimain" wx:for='{{data}}'>
+    <view class="api">
+       <span class="{{item[0]==1?'s':''}}{{item[0]==2?'y':''}}{{item[0]==3?'z':''}}">
+        {{item[0]}}
+       </span> 
+    </view>
+    <view class="api textmax">
+        {{item[1]}}
+    </view>
+    <view class="api">
+        {{item[4]}}
+    </view>
+    <view class="api">
+        {{item[5]}}
+    </view>
+    <!-- <navigator url="/ec-canvas/detail/index?id={{item[0]}}&name={{item[1]}}&shouyi={{item[4]}}&cangwei={{item[5]}}&benjin={{item[2]}}&zichan={{item[3]}}">  
+        <span class="xiangqing">详情</span>
+        </navigator> -->
+  <view class="api" bindtap="detail" data-id="{{item[0]}}" data-name="{{item[1]}}" data-shouyi="{{item[4]}}" data-cangwei="{{item[5]}}" data-benjin="{{item[2]}}" data-zichan="{{item[3]}}" data-chicangid="{{item[8]}}">
+        <span class="xiangqing">详情</span>
+      
+    </view>
+</view>
+</view>
+<!--pages/gupiao.wxml-->
+<view wx:if='{{gpif!=1}}'>
+<view class="head">
+    <view class="head-left">
+        <image mode="widthFix" src="/images/logo.png"></image>
+    </view>
+    <view class="head-right">
+    <navigator url="seek">
+        <image mode="widthFix" src="/images/jia.png"></image>我要咨询
+    </navigator>
+    </view>
+</view>
+<view>
+      <swiper style="width:100%;height:{{imgheights}}px" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <swiper-item>
+              <image mode="widthFix" src="/images/banner1.jpg"></image>
+          </swiper-item>
+      </swiper>
+</view>
+<view class='cion' style="padding-top:20rpx">
+   <view>
+      <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/c1.png"></image>
+      <br/>
+      泳池好手
+      </navigator>
+   </view>
+   <view>
+      <navigator url="gupiao?type=2" open-type="switchTab">
+      <image mode="widthFix" src="/images/c2.png"></image>
+      <br/>
+      教练好手
+      </navigator>
+   </view>
+   <view>
+      <image mode="widthFix" src="/images/c5.png"></image>
+      <br/>
+      赛事说明
+   </view>
+   <view>
+      <image mode="widthFix" src="/images/c6.png"></image>
+      <br/>
+      赛事奖项
+   </view>
+</view>
+<view class="tap">
+    <view class="tap-t {{type==1?'active':''}}" bindtap="caopanshoubtn">
+        期末赛事月排名
+    </view>
+    <view class="tap-t {{type==2?'active':''}}" bindtap="jijinbtn">
+        期末赛事总排名
+    </view>
+</view>
+<view class="tapapimain">
+    <view class="tapapi">
+        排名
+    </view>
+    <view class="tapapi">
+        选手
+    </view>
+    <view class="tapapi">
+        提升位率
+    </view>
+    <view class="tapapi">
+        抢分比
+    </view>
+    <view class="tapapi" style="border-right:none">
+        评分
+    </view>
+</view>
+<view class="apimain" wx:for='{{data}}'>
+    <view class="api">
+       <span class="{{item[0]==1?'s':''}}{{item[0]==2?'y':''}}{{item[0]==3?'z':''}}">
+        {{item[0]}}
+       </span> 
+    </view>
+    <view class="api">
+        {{item[1]}}
+    </view>
+    <view class="api">
+        {{item[4]}}
+    </view>
+    <view class="api">
+        {{item[5]}}
+    </view>
+    <!-- <navigator url="/ec-canvas/detail/index?id={{item[0]}}&name={{item[1]}}&shouyi={{item[4]}}&cangwei={{item[5]}}&benjin={{item[2]}}&zichan={{item[3]}}">  
+        <span class="xiangqing">详情</span>
+        </navigator> -->
+  <view class="api">
+        优
+      
+    </view>
+</view>
+</view>

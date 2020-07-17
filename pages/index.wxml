@@ -1,0 +1,184 @@
+<!--pages/index.wxml-->
+<view wx:if='{{gpif==1}}'>
+<view>
+      <swiper style="width:100%;height:{{imgheights}}px" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+               <image bindload="imageLoad" mode="widthFix" src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+</view>
+<view class='cion' style="padding-top:20rpx">
+
+   <view>
+    <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion1.png"></image>
+      <br/>
+      STC初级赛
+    </navigator>
+   </view>
+
+   <view bindtap="stctype" data-A="2">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion2.png"></image>
+      <br/>
+      STC中级赛
+      </navigator>
+   </view>
+   <view bindtap="stctype" data-A="3">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion3.png"></image>
+      <br/>
+      STC高级赛
+      </navigator>
+   </view>
+   <view bindtap="stctype" data-A="4">
+   <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion8.png"></image>
+      <br/>
+      FDM赛排
+      </navigator>
+   </view>
+
+</view>
+<view class='cion' style="padding-bottom:30rpx">
+   <view>
+   <navigator url="qihuo" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion4.png"></image>
+      <br/>
+      CTA赛排名
+      </navigator>
+   </view>
+   <view>
+   <navigator url="note">
+      <image mode="widthFix" src="/images/cion5.png"></image>
+      赛事说明
+      </navigator>
+   </view>
+   <view>
+   <navigator url="jiangxiang">
+      <image mode="widthFix" src="/images/cion6.png"></image>
+      赛事奖项
+      </navigator>
+   </view>
+   <view>
+   <navigator url="seek">
+      <image mode="widthFix" src="/images/cion7.png"></image>
+      报名参赛
+      </navigator>
+   </view>
+</view>
+<view class="list">
+<navigator url="gupiao" open-type="switchTab">
+    <image mode="widthFix" src="http://cdmcxq.com/gp/public/static/gg3.jpg"></image>
+    </navigator>
+</view>
+<view class="list" bindtap="stctype" data-A="2">
+<navigator url="gupiao" open-type="switchTab">
+    <image mode="widthFix" src="http://cdmcxq.com/gp/public/static/gg4.jpg"></image>
+    </navigator>
+</view>
+<view class="list" bindtap="stctype" data-A="3">
+<navigator url="gupiao" open-type="switchTab">
+    <image mode="widthFix" src="http://cdmcxq.com/gp/public/static/gg5.jpg"></image>
+    </navigator>
+</view>
+<view class="list" bindtap="stctype" data-A="4">
+<navigator url="gupiao" open-type="switchTab">
+    <image mode="widthFix" src="http://cdmcxq.com/gp/public/static/gg6.jpg"></image>
+    </navigator>
+</view>
+<view class="list">
+<navigator url="qihuo" open-type="switchTab">
+    <image mode="widthFix" src="http://cdmcxq.com/gp/public/static/gg7.jpg"></image>
+    </navigator>
+</view>
+</view>
+<!--pages/index.wxml-->
+<view wx:if='{{gpif!=1}}'>
+<view>
+      <swiper style="width:100%;height:{{imgheights}}px" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background1}}" wx:key="*this">
+          <swiper-item>
+               <image bindload="imageLoad" mode="widthFix" src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+</view>
+<view class='cion' style="padding-top:20rpx">
+
+   <view>
+    <navigator url="gupiao" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion1.png"></image>
+      <br/>
+      泳池好手
+    </navigator>
+   </view>
+
+   <view>
+   <navigator url="gupiao?type=2" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion2.png"></image>
+      <br/>
+      教练好手
+      </navigator>
+   </view>
+   <view>
+   <navigator url="qihuo" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion3.png"></image>
+      <br/>
+      赛事月排
+      </navigator>
+   </view>
+   <view>
+   <navigator url="qihuo?type=2" open-type="switchTab">
+      <image mode="widthFix" src="/images/cion4.png"></image>
+      <br/>
+      赛事总排
+      </navigator>
+   </view>
+</view>
+<view class='cion' style="padding-bottom:30rpx">
+   <view>
+   <navigator url="seek">
+      <image mode="widthFix" src="/images/cion5.png"></image>
+      赛事说明
+      </navigator>
+   </view>
+   <view>
+   <navigator url="seek">
+      <image mode="widthFix" src="/images/cion6.png"></image>
+      赛事奖项
+      </navigator>
+   </view>
+   <view>
+   <navigator url="seek">
+      <image mode="widthFix" src="/images/cion7.png"></image>
+      报名参赛
+      </navigator>
+   </view>
+   <view>
+   <navigator url="seek">
+      <image mode="widthFix" src="/images/cion8.png"></image>
+      关于我们
+      </navigator>
+   </view>
+</view>
+<view class="list">
+<navigator url="gupiao" open-type="switchTab">
+    <image mode="widthFix" src="/images/gg0.jpg"></image>
+    </navigator>
+</view>
+<view class="list">
+<navigator url="qihuo" open-type="switchTab">
+    <image mode="widthFix" src="/images/gg1.jpg"></image>
+    </navigator>
+</view>
+<view class="list">
+<navigator url="qihuo" open-type="switchTab">
+    <image mode="widthFix" src="/images/gg2.jpg"></image>
+    </navigator>
+</view>
+</view>

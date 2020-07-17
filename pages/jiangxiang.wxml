@@ -1,0 +1,17 @@
+<!--pages/note.wxml-->
+<view class="head">
+    <view class="head-left">
+        <image mode="widthFix" src="/images/logo.png"></image>
+    </view>
+    <view class="head-right">
+            <navigator url="seek">
+        <image mode="widthFix" src="/images/jia.png"></image>我要咨询
+    </navigator>
+    </view>
+</view>
+<view>
+    <image bindload="imageLoad" mode="widthFix" src="/images/banner.jpg"></image>
+</view>
+<view>
+    <image bindload="imageLoad" mode="widthFix" src="http://cdmcxq.com/gp/public/static/jiangxiang.jpg"></image>
+</view>

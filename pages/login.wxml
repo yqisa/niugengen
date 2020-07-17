@@ -1,0 +1,24 @@
+<!--pages/login.wxml-->
+<view>
+<view class="logo"><image mode="widthFix" src="/images/logo.png"></image></view>
+<view class="input">
+<view class="cion">
+<image mode="widthFix" src="/images/u.png"></image>
+</view>
+<input type="number" bindblur="user" name="user" placeholder="  手机号" />
+
+</view>
+<view class="input">
+<view class="cion">
+<image mode="widthFix" src="/images/ps.png"></image>
+</view>
+<input type="text" bindblur="password" name="password" placeholder="  输入密码" />
+</view>
+<button style="width:600rpx;border-radius:0;line-height:80rpx;font-weight:300" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+登 录</button>
+</view>
+<view class="dan">
+<navigator url="zc" hover-class="none">
+立 即 注 册
+</navigator>
+</view>

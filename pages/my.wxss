@@ -1,0 +1,23 @@
+/* pages/my.wxss d43d28      f8ed1b    0a0a0a*/
+page{
+  font-size:28rpx
+}
+.head{
+  background:#d43d28;
+  color:#FFFFFF;
+  text-align: center;
+line-height:60rpx
+}
+.head span{color: #f8ed1b}
+.tab{line-height:100rpx;height:100rpx;width:94%;margin:0 auto;border-bottom:1px solid #ebebeb}
+.tab .tab_text{width:96%;float:left}
+.tab .right{width:4%;float:left}
+/* .tab .right image{} */
+.cion{padding:30rpx 0;height:160rpx}
+.cion view{width:25%;text-align:center;float:left}
+.cion view image{width:100rpx;}
+.cion view text{display:block;font-size:26rpx;color:#333333}
+.header{height:220rpx;background:#00aeff;text-align:center;padding:30rpx 0;color:#FFF}
+.header .attr{width:120rpx;height:120rpx;border-radius:50%;overflow:hidden;margin:0 auto}
+.header .name{font-size:32rpx;padding:10rpx 0}
+.header .phone{font-size:24rpx}

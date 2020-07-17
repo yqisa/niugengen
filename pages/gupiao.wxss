@@ -1,0 +1,46 @@
+/* pages/gupiao.wxss */
+.head{display:flex;}
+.head .head-left image{width:350rpx;}
+.head .head-left{width:70%}
+.head .head-right{text-align:right;width:30%;line-height:100rpx;padding-right:30rpx}
+.head .head-right image{width:30rpx;height:30rpx}
+
+.cion{display:flex;text-align:center;color:#333333;font-size:26rpx;margin:30rpx 0;}
+.cion view{width:25%;text-align:center;}
+.cion image{width:100rpx;height:100rpx;display:block;margin:20rpx auto}
+.tap{height:80rpx;line-height:80rpx;display:flex;background:#e3e3e3;text-align:center;color:#393838;margin-top:40rpx}
+.tap-t{width:50%;font-size:30rpx}
+.active{background:#d43d28;color:#FFFFFF}
+.tap view{border-right:1px solid #FFFFFF}
+
+.tapapimain{height:75rpx;line-height:75rpx;display:flex;font-size:26rpx;text-align:center;border-bottom:2px solid #e3e3e3}
+.tapapi{border-right:1px solid #e3e3e3;width:19.5%;color: #3d3d3d;font-size:30rpx;}
+.apimain{height:100rpx;line-height:100rpx;display:flex;font-size:26rpx;text-align:center}
+.api{width:20%;color: #3d3d3d}
+.apimain:nth-of-type(even){
+  background:#e3e3e3
+}
+.s{
+  background:#f7030e;
+  border-radius:50%;
+  padding:4rpx 16rpx;
+  color:#FFF;
+}
+.textmax{overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;}
+.y{
+  background:#f74608;
+  border-radius:50%;
+  padding:4rpx 16rpx;
+  color:#FFF;
+}
+.z{
+  background:#fb9503;
+  border-radius:50%;
+  padding:4rpx 16rpx;
+  color:#FFF;
+}
+
+.xiangqing{background:#d43d28;padding:3rpx 20rpx;font-size:22rpx;color:#FFFFFF;border-radius:4rpx}
+/* f7030e  f74608  fb9503 d43d28  3d3d3d */

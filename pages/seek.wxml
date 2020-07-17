@@ -1,0 +1,284 @@
+<!--pages/seek.wxml-->
+<view wx:if='{{gpif==1}}'>
+<view class="head">
+    <view class="head-left">
+        <image mode="widthFix" src="/images/logo.png"></image>
+    </view>
+    <!-- <view class="head-right">
+        <image mode="widthFix" src="/images/jia.png"></image>我要咨询
+    </view> -->
+</view>
+<view>
+    <image bindload="imageLoad" mode="widthFix" src="/images/banner.jpg"></image>
+</view>
+<view class="seek_main active">
+  <view>
+  比赛报名-咨询老师
+  <view class="p p1">
+  比赛报名方式
+  </view>
+  <view class="p">
+  报名流程，需要准备的东西
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/code1.png"></image>
+  </view>
+</view>
+<view class="seek_main">
+  <view>
+  股票问题-股票牛人1
+  <view class="p p1">
+  股票资产管理
+  </view>
+  <view class="p">
+  行情分析，股票个股诊断
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/code2.png"></image>
+  </view>
+</view>
+<view class="seek_main active">
+  <view>
+  股票问题-股票牛人2
+  <view class="p p1">
+  股票资产管理
+  </view>
+  <view class="p">
+  牛人指导，股票操盘咨询
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/code3.png"></image>
+  </view>
+</view>
+<view class="seek_main">
+  <view>
+  期货问题-期货牛人
+  <view class="p p1">
+  期货资产管理
+  </view>
+  <view class="p">
+  投资管理，期货操盘咨询
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/code4.png"></image>
+  </view>
+</view>
+<view class="seek_main active">
+  <view>
+  加入我们-咨询老师
+  <view class="p p1">
+  想要加入我们
+  </view>
+  <view class="p">
+  相当操盘手，成为我们公司的一员
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/code5.png"></image>
+  </view>
+</view>
+<view class="seek_main">
+  <view>
+  数据问题-咨询老师
+  <view class="p p1">
+  每日数据更新
+  </view>
+  <view class="p">
+  实时更新，真实有效
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/code6.png"></image>
+  </view>
+</view>
+<view class="seek_main active">
+  <view>
+  公司管理-公司总监
+  <view class="p p1">
+  公司运营统筹
+  </view>
+  <view class="p">
+  公司管理，业务合作洽谈
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/code6.png"></image>
+  </view>
+</view>
+</view>
+<!--pages/seek.wxml-->
+<view wx:if='{{gpif!=1}}'>
+<view class="head">
+    <view class="head-left">
+        <image mode="widthFix" src="/images/logo.png"></image>
+    </view>
+    <!-- <view class="head-right">
+        <image mode="widthFix" src="/images/jia.png"></image>我要咨询
+    </view> -->
+</view>
+<view>
+    <image bindload="imageLoad" mode="widthFix" src="/images/banner.png"></image>
+</view>
+<view class="seek_main active">
+  <view>
+  比赛报名-咨询老师
+  <view class="p p1">
+  比赛报名方式
+  </view>
+  <view class="p">
+  报名流程，需要准备的东西
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/yongchi.png"></image>
+  </view>
+</view>
+<view class="seek_main">
+  <view>
+  学习问题-游泳教练咨询1
+  <view class="p p1">
+  教练咨询
+  </view>
+  <view class="p">
+  得失分析，错误失分诊断
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/yongchi.png"></image>
+  </view>
+</view>
+<view class="seek_main active">
+  <view>
+  学习问题-游泳教练咨询2
+  <view class="p p1">
+  教练咨询
+  </view>
+  <view class="p">
+  牛人指导，快速学习泳技
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/yongchi.png"></image>
+  </view>
+</view>
+<view class="seek_main">
+  <view>
+  百米比赛得分问题-牛人
+  <view class="p p1">
+  百米比赛
+  </view>
+  <view class="p">
+  合理安排计划，自我提升
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/yongchi.png"></image>
+  </view>
+</view>
+<view class="seek_main active">
+  <view>
+  加入我们-咨询老师
+  <view class="p p1">
+  想要加入我们
+  </view>
+  <view class="p">
+  相当游泳健将，成为八块腹肌的一员
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/yongchi.png"></image>
+  </view>
+</view>
+<view class="seek_main">
+  <view>
+  数据问题-咨询老师
+  <view class="p p1">
+  每日数据更新
+  </view>
+  <view class="p">
+  实时更新，真实有效
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/yongchi.png"></image>
+  </view>
+</view>
+<view class="seek_main active">
+  <view>
+  公司管理-公司总监
+  <view class="p p1">
+  公司运营统筹
+  </view>
+  <view class="p">
+  公司管理
+  </view>
+  <view class="kongge"></view>
+  <span class="seekbtn">
+  扫描二维码咨询
+  </span>
+  </view> 
+  <view class="code">
+  <image class="codeimg" mode="widthFix" src="/images/yongchi.png"></image>
+  </view>
+</view>
+</view>
+
+
+
+

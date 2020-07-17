@@ -1,0 +1,53 @@
+<!--pages/login.wxml-->
+<view>
+<view class="logo"><image mode="widthFix" src="/images/logo.png"></image></view>
+<view class="input">
+<view class="cion">
+<image mode="widthFix" src="/images/p.png"></image>
+</view>
+<input type="number" bindblur="user" name="user" placeholder="  手机号" />
+</view>
+
+<view class="input">
+<view class="cion">
+<image mode="widthFix" src="/images/c.png"></image>
+</view>
+<input class="codeleft" type="number" bindblur="code1" name="code" placeholder="  验证码" />
+<view class="code" bindtap="code">获取验证码</view>
+</view>
+
+<view class="input">
+<view class="cion">
+<image mode="widthFix" src="/images/u.png" style="margin-left:4rpx"></image>
+</view>
+<input type="text" bindblur="n" name="n" placeholder="  昵称" />
+</view>
+
+<view class="input">
+<view class="cion">
+<image mode="widthFix" src="/images/ps.png"></image>
+</view>
+<input type="text" bindblur="password" name="password" placeholder="  输入密码" />
+</view>
+
+<view class="input">
+<view class="cion">
+<image mode="widthFix" src="/images/pd.png" style="margin-left:6rpx"></image>
+</view>
+<input type="text" bindblur="dpassword" name="dpassword" placeholder="  再次输入密码" />
+</view>
+
+<view class="check">
+<view class="kuang" bindtap="type"></view> 我已阅读并接受《牛跟跟协议》
+<view class="chkuang" bindtap="chtype" wx:if='{{chtype==1}}'>
+<image mode="widthFix" src="/images/t.png" style="margin-left:6rpx"></image>
+</view>
+</view>
+<button style="width:600rpx;border-radius:0;line-height:80rpx;font-weight:300" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+立 即 注 册</button>
+</view>
+<view class="dan">
+<navigator url="login">
+登 录
+</navigator>
+</view>
